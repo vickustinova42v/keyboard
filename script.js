@@ -11,7 +11,6 @@ const keyboardCapslocks = document.querySelectorAll('.keyboard__caps');
 const keyboardCtrlAlts = document.querySelectorAll('.keyboard__ctrl-alt');
 const keyboardEnters = document.querySelectorAll('.keyboard__enter');
 const closeButton = document.querySelector('.keyboard__close');
-const headerPage = document.querySelector('.header__page');
 const searchForm = document.querySelector('.main__form');
 const searchInput = document.querySelector('.header__input');
 
@@ -600,9 +599,6 @@ if (keyboardEnters) {
 
 if (closeButton) {
     closeButton.addEventListener('click', () => {
-        if(headerPage) {
-            headerPage.classList.remove('header-fixed');
-        }
         keyboard.classList.add('visually-hidden');
         keyboardIcon.classList.remove('keyboard__icon--active');
         addEventToInput();
@@ -611,9 +607,6 @@ if (closeButton) {
 
 if(keyboardIcon) {
     keyboardIcon.addEventListener('click', () => {
-        if(headerPage) {
-            headerPage.classList.toggle('header-fixed');
-        }
         keyboard.classList.toggle('visually-hidden');
         keyboardIcon.classList.toggle('keyboard__icon--active');
         addEventToInput();

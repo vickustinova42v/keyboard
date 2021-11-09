@@ -5,6 +5,40 @@
   --dark-gray: #b6b8bb;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.form__wrap {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__input {
+  width: 600px;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.form__button {
+  height: 100%;
+  width: 30px;
+}
+
 .keyboard__icon--active path {
   fill: var(--black);
 }
